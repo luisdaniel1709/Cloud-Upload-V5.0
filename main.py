@@ -614,9 +614,6 @@ def onmessage(update,bot:ObigramClient):
                         info1+='\n'
                         i+=1
                         bot.editMessageText(message, f'{info1}',parse_mode="html")
-            else:
-               bot.editMessageText(message,'⚠️Error y causas🧐\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
-            pass
 
         elif '/txt_' in msgText and user_info['cloudtype']=='moodle':
              findex = str(msgText).split('_')[1]
