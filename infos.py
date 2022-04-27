@@ -29,14 +29,14 @@ def porcent(index,max):
     return porcent
 
 def createDownloading(filename,totalBits,currentBits,speed,time,tid=''):
-    msg = '📥𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾... \n\n'
+    msg = '📥𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾📥... \n\n'
     msg+= '➢Nombre: ' + str(filename)+'\n\n'
     msg+= '➢Total: ' + str(sizeof_fmt(totalBits))+'\n\n'
     msg+= '➢Descargado: ' + str(sizeof_fmt(currentBits))+'\n\n'
     msg+= '➢Velocidad: ' + str(sizeof_fmt(speed))+'/s\n\n'
     msg+= '➢Tiempo restante: ' + str(datetime.timedelta(seconds=int(time))) +'\n\n'
 
-    msg = '📥𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾 𝙰𝚁𝙲𝙷𝙸𝚅𝙾....\n\n'
+    msg = '📥𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾 𝙰𝚁𝙲𝙷𝙸𝚅𝙾📥....\n\n'
     msg += '➢Archivo: '+filename+'\n'
     msg += text_progres(currentBits,totalBits)+'\n'
     msg += '➢Porcentaje: '+str(porcent(currentBits,totalBits))+'%\n\n'
@@ -70,7 +70,7 @@ def createUploading(filename,totalBits,currentBits,speed,time,originalname=''):
 
     return msg
 def createCompresing(filename,filesize,splitsize):
-    msg = '🗜️𝙲𝙾𝙼𝙿𝚁𝙸𝙼𝙸𝙴𝙽𝙳𝙾... \n\n'
+    msg = '🗜️𝙲𝙾𝙼𝙿𝚁𝙸𝙼𝙸𝙴𝙽𝙳𝙾🗜️... \n\n'
     msg+= '➢Nombre: ' + str(filename)+'\n'
     msg+= '➢Tamaño Total: ' + str(sizeof_fmt(filesize))+'\n'
     msg+= '➢Tamaño Partes: ' + str(sizeof_fmt(splitsize))+'\n'
@@ -118,7 +118,7 @@ def createStat(username,userdata,isadmin):
     msg+= '➢Nombre: ༺@' + str(username)+'༻\n'
     msg+= '➢Usuario: ' + str(userdata['moodle_user'])+'\n'
     msg+= '➢Contraseña: ' + str(userdata['moodle_password'])+'\n'
-    msg+= '➢Url: ' + str(userdata['moodle_host'])+'\n'
+    msg+= '➢Host: ' + str(userdata['moodle_host'])+'\n'
     if userdata['cloudtype'] == 'moodle':
         msg+= '➢Repo ID: ' + str(userdata['moodle_repo_id'])+'\n'
     msg+= '➢Tipo de nube: ' + str(userdata['cloudtype'])+'\n'
