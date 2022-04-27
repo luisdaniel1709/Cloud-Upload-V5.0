@@ -339,12 +339,14 @@ def onmessage(update,bot:ObigramClient):
 
 
         if '/help' in msgText:
-            tuto = open('tuto.txt','r')
-            bot.sendMessage(update.message.chat.id,tuto.read())
-            tuto.close()
+            help = open('tuto.txt','r')
+            bot.sendMessage(update.message.chat.id,about.read())
+            help.close()
             return
         if '/about' in msgText:
-            bot.sendMessage(update.message.chat.id, f'🤖Bot Verción 7.2.0')
+            about = open('información.txt','r')
+            bot.sendMessage(update.message.chat.id,about.read())
+            about.close()
             return
         if '/my' in msgText:
             getUser = user_info
@@ -417,9 +419,9 @@ def onmessage(update,bot:ObigramClient):
                     jdb.save_data_user(username,getUser)
                     jdb.save()
                     statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-                    bot.sendMessage(update.message.chat.id,statInfo)
+                    bot.sendMessage(update.message.chat.id,'🔮 No Tokenizar enlaces de descarga.')
             except:
-                bot.sendMessage(update.message.chat.id,'⚠️Error en el comando token_on⚠️')
+                bot.sendMessage(update.message.chat.id,'⚠️Error en el comando token_on estado⚠️')
             return
         if '/token_off' in msgText:
             try:
@@ -429,7 +431,7 @@ def onmessage(update,bot:ObigramClient):
                     jdb.save_data_user(username,getUser)
                     jdb.save()
                     statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
-                    bot.sendMessage(update.message.chat.id,'📨 | ¡Configuración guardada con éxito!')
+                    bot.sendMessage(update.message.chat.id,'🔮Tokenizar enlaces de descarga.')
             except:
                 bot.sendMessage(update.message.chat.id,'⚠️Error en el comando /token_off estado⚠️')
             return
@@ -506,7 +508,7 @@ def onmessage(update,bot:ObigramClient):
                 if user_info:
                     user_info['proxy'] = ''
                     statInfo = infos.createStat(username,user_info,jdb.is_admin(username))
-                    bot.sendMessage(update.message.chat.id,statInfo)
+                    bot.sendMessage(update.message.chat.id,'🧬Perfecto, proxy equipado exitosamente.')
             return
         if '/crypt' in msgText:
             proxy_sms = str(msgText).split(' ')[1]
@@ -525,13 +527,13 @@ def onmessage(update,bot:ObigramClient):
                     getUser['proxy'] = ''
                     jdb.save_data_user(username,getUser)
                     jdb.save()
-                    msg = 'Bien, proxy desequipado exitosamente...'
+                    msg = '🧬Bien, proxy desequipado exitosamente.\n'
                     bot.sendMessage(update.message.chat.id,msg)
             except:
                 if user_info:
                     user_info['proxy'] = ''
                     statInfo = infos.createStat(username,user_info,jdb.is_admin(username))
-                    bot.sendMessage(update.message.chat.id,'📨 | ¡Configuración guardada con éxito!')
+                    bot.sendMessage(update.message.chat.id,'🧬Error al desequipar proxy.')
             return
         if '/view_proxy' in msgText:
             try:
@@ -554,7 +556,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             start_msg = '🌟𝔹𝕆𝕋 𝕀ℕ𝕀ℂ𝕀𝔸𝔻𝕆🌟\n\n'
-            start_msg+= '🤖Hola!Bienvenid@ al bot de descargas gratis SuperDownload en su versión inicial 1.0 PlusEdition🌟.\n'
+            start_msg+= '🤖Hola @' + str(username)+'!Bienvenid@ al bot de descargas gratis SuperDownload en su versión inicial 1.0 PlusEdition🌟.\n'
             start_msg+= '🦾Desarrollador: @Luis_Daniel_Diaz\n'
             start_msg+= '🙂Si necesita ayuda o información utilice:\n'
             start_msg+= '/help\n'
