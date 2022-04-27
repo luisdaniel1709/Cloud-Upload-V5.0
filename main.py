@@ -339,14 +339,14 @@ def onmessage(update,bot:ObigramClient):
 
 
         if '/help' in msgText:
-            help = open('tuto.txt','r')
-            bot.sendMessage(update.message.chat.id,about.read())
-            help.close()
+            tuto = open('tuto.txt','r')
+            bot.sendMessage(update.message.chat.id,tuto.read())
+            tuto.close()
             return
         if '/about' in msgText:
-            about = open('información.txt','r')
-            bot.sendMessage(update.message.chat.id,about.read())
-            about.close()
+            información = open('información.txt','r')
+            bot.sendMessage(update.message.chat.id,información.read())
+            información.close()
             return
         if '/my' in msgText:
             getUser = user_info
