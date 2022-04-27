@@ -500,13 +500,13 @@ def onmessage(update,bot:ObigramClient):
                     getUser['proxy'] = proxy
                     jdb.save_data_user(username,getUser)
                     jdb.save()
-                    msg = 'Perfecto, proxy equipado exitosamente...'
+                    msg = '🧬Perfecto, proxy equipado exitosamente...'
                     bot.sendMessage(update.message.chat.id,msg)
             except:
                 if user_info:
                     user_info['proxy'] = ''
                     statInfo = infos.createStat(username,user_info,jdb.is_admin(username))
-                    bot.sendMessage(update.message.chat.id,'🧬Perfecto, proxy equipado exitosamente.')
+                    bot.sendMessage(update.message.chat.id,'🧬Error al equipar proxy.')
             return
         if '/crypt' in msgText:
             proxy_sms = str(msgText).split(' ')[1]
@@ -555,13 +555,13 @@ def onmessage(update,bot:ObigramClient):
                 msg = tcancel.getStore('msg')
                 tcancel.store('stop',True)
                 time.sleep(3)
-                bot.editMessageText(msg,'🚫Tarea cancelada🚫')
+                bot.editMessageText(msg,'🚫𝚃𝙰𝚁𝙴𝙰 𝙲𝙰𝙽𝙲𝙴𝙻𝙰𝙳𝙰🚫')
             except Exception as ex:
                 print(str(ex))
             return
         # end
 
-        message = bot.sendMessage(update.message.chat.id,'⏳Analizando...⌛')
+        message = bot.sendMessage(update.message.chat.id,'⏳𝙰𝚗𝚊𝚕𝚒𝚣𝚊𝚗𝚍𝚘...⌛')
 
         thread.store('msg',message)
 
