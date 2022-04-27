@@ -1,0 +1,94 @@
+ ꧁TUTORIAL꧂
+         𝚂𝚞𝚙𝚎𝚛 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙱𝚘𝚝
+༺═──────────────═༻
+◆ ▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬ ◆
+
+/about ➳ Comando para ver información sobre el bot.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/admin ➳ Comando para añadir acceso de administrador del bot a un usuario.
+Ejemplo:
+/admin Luis_Daniel_Diaz
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/add ➳ Comando para añadir acceso de usuario al bot.
+Ejemplo:
+/add Luis_Daniel_Diaz
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/preview ➳ Comando para añadir un usuario al bot en modo prueba: no puede hacer ni subir nada, solamente observar el bot.
+Ejemplo:
+/preview Luis_Daniel_Diaz
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/ban ➳ Comando para banear/quitar acceso completamente sobre el bot a un usuario.
+Ejemplo:
+/ban Luis_Daniel_Diaz
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/acc ➳ Comando para configurar Usuario y Contraseña.
+Ejemplo: /acc luisi,1234
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/host ➳ Comando para establecer el Host del moodle o la nube
+Ejemplo:
+/host https://aulacened.uci.cu/
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/zips ➳ Comando para establecer el tamaño maximo por archivos.
+Este comando sirve cuando su nube por ejemplo es de 50 mb por archivo y usted quiere subir algo de 200 MiB pues el Bot parte el archivo en partes de 50 MiB y las sube.
+Se usa pasando un número detrás del comando
+Ejemplo:
+/zip 5
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/repo ➳ Comando para configurar el Repo ID del host
+Se usa pasando el id detrás del comando, el ID va del número 2 al 6.
+Ejemplo:
+/repo 5
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/cloud ➳ Comando para cambiar a modo Nube.
+Solo use el comando /cloud y automaticamente pasa a modo nube.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/dir ➳ Comando para establecer a que carpeta de la nube se subira.
+Se usa pasando el nombre del directorio detrás del comando.
+Ejemplo:
+/dir descargas
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/moodle ➳ Comando para cambiar a moodle.
+Solo use el comando /moodle y automaticamente pasa a modo moodle, predeterminadamente siempre esta en moodo moodle.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/up ➳ Comando para configurar que tipo de subida a moodle.
+existen 5 maneras: 
+/up draft
+/up blog 
+/up evidence 
+/up calendar
+/up perfil
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/storage ➳ Comando para ver los archivos dentro de la nube.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/txt_ Comando para descargar archivo correspondiente con el número que le sigue.
+Ejemplo
+/txt_2
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/del_ Comando para eliminar de la nube un archivo correspondiente con el número que le sigue.
+Ejemplo:
+/del
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/proxy ➳ Comando para establecer proxy en el bot.
+Se usa pasando el proxy claramente encriptado detrás del comando.
+Ejemplo:
+/proxy soket587d89as891723821jhkasd
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/off_proxy ➳ Comando para eliminar el proxy del Bot
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/crypt ➳ Comando para encriptar su proxy sino lo está.
+Ejemplo:
+/crypt (y el proxy no encriptado)
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/decrypt ➳ Comando para desencriptar el proxy si lo está. 
+Ejemplo:
+/decrypt (y el proxy encriptado)
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/View_proxy ➳ Comando para ver el proxy establecido actualmente.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/token_on ➳ Comando para activar encriptado, no disponible.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/token_off ➳ Comando para desactivar encriptado, no disponible.
+ ━━━━━━━━━༺༻━━━━━━━━━━
+/help ➳ Comando para mostrar la ayuda disponible del Bot.
+
+◆ ▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬ ◆
