@@ -335,9 +335,7 @@ def onmessage(update,bot:ObigramClient):
             return
         # end
 
-
-
-
+        # comandos de usuario
         if '/help' in msgText:
             tuto = open('tuto.txt','r')
             bot.sendMessage(update.message.chat.id,tuto.read())
@@ -549,6 +547,7 @@ def onmessage(update,bot:ObigramClient):
                     proxy = user_info['proxy']
                     bot.sendMessage(update.message.chat.id,proxy)
             return
+        # end
 
         message = bot.sendMessage(update.message.chat.id,'⏳Analizando...⌛')
 
