@@ -555,10 +555,14 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start = open('start.txt','r')
-            bot.sendMessage(update.message.chat.id,start.read())
-            start.close()
-            return
+            start_msg = '   🌟𝔹𝕆𝕋 𝕀ℕ𝕀ℂ𝕀𝔸𝔻𝕆🌟\n\n'
+            start_msg+= '࿇ ══━━━━✥◈✥━━━━══ ࿇\n'
+            start_msg+= '🦾Desarrollador: ༺ @Luis_Daniel_Diaz ༻\n'
+            start_msg+= '🙂Si necesita ayuda o información utilice:\n'
+            start_msg+= '/help\n'
+            start_msg+= '/about\n\n'
+            start_msg+= '😁𝚀𝚞𝚎 𝚍𝚒𝚜𝚏𝚛𝚞𝚝𝚎 𝚐𝚛𝚊𝚗𝚍𝚎𝚖𝚎𝚗𝚝𝚎 𝚜𝚞 𝚎𝚜𝚝𝚊𝚍𝚒𝚊😁.\n'
+            bot.editMessageText(message,start_msg)            
         # elif '/files' == msgText and user_info['cloudtype']=='moodle':
         #      proxy = ProxyCloud.parse(user_info['proxy'])
         #      client = MoodleClient(user_info['moodle_user'],
