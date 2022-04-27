@@ -201,7 +201,7 @@ def ddl(update,bot,message,url,file_name='',thread=None,jdb=None):
         if file:
             processFile(update,bot,message,file,jdb=jdb)
         else:
-            bot.editMessageText(message,'⚠️Lo siento pero el enlce no es correcto⚠️')
+            bot.editMessageText(message,'⚠️El enlce no es compatible⚠️')
 
 # def megadl(update,bot,message,megaurl,file_name='',thread=None,jdb=None):
 #     megadl = megacli.mega.Mega({'verbose': True})
